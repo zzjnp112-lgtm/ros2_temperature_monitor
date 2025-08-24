@@ -20,6 +20,7 @@ ros2 service call /reset_counter std_srvs/srv/Trigger
 # ⏸️ 暂停/恢复计数 (true=暂停, false=恢复)
 ros2 service call /pause_counter std_srvs/srv/SetBool "{data: true}"
 参数配置
+
 bash# 🎛️ 调整计数频率 (Hz)
 ros2 param set /counter_node frequency 2.0
 
