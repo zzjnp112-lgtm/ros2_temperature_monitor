@@ -8,7 +8,7 @@ ROS2 智能计数器系统
 ⚙️ 动态配置 - 运行时参数调整
 🔧 服务控制 - 完整的生命周期管理
 控制命令
-bash# 🎬 开始计数
+# 🎬 开始计数
 ros2 service call /start_counter std_srvs/srv/Trigger
 
 # ⏹️ 停止计数
@@ -21,7 +21,7 @@ ros2 service call /reset_counter std_srvs/srv/Trigger
 ros2 service call /pause_counter std_srvs/srv/SetBool "{data: true}"
 参数配置
 
-bash# 🎛️ 调整计数频率 (Hz)
+# 🎛️ 调整计数频率 (Hz)
 ros2 param set /counter_node frequency 2.0
 
 # 📏 修改递增步长
